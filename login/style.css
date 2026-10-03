@@ -1,0 +1,366 @@
+/* ==================================================
+   MIDNIGHT CYBER-NEON
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #030712;
+}
+
+
+/* ==================================================
+   BACKGROUND VIDEO
+================================================== */
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+
+  overflow: hidden;
+}
+
+
+#bgVideo {
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  filter: brightness(0.6);
+}
+
+
+.video-overlay {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(15, 23, 42, 0.6) 0%,
+      rgba(3, 7, 18, 0.9) 100%
+    );
+
+  backdrop-filter: blur(12px);
+
+  -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* ==================================================
+   LOGIN WRAPPER
+================================================== */
+
+.login-wrapper {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+}
+
+
+/* ==================================================
+   CYBER PANEL
+================================================== */
+
+.cyber-panel {
+  background: rgba(13, 17, 23, 0.75);
+
+  border: 1px solid rgba(139, 92, 246, 0.2);
+
+  box-shadow:
+    0 0 40px rgba(139, 92, 246, 0.15),
+    0 20px 40px rgba(0, 0, 0, 0.6);
+
+  backdrop-filter: blur(20px);
+
+  -webkit-backdrop-filter: blur(20px);
+
+  border-radius: 24px;
+
+  width: 100%;
+  max-width: 400px;
+
+  padding: 44px 32px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    all 0.4s
+    cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+.cyber-panel::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #8b5cf6,
+      transparent
+    );
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.login-header {
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+
+.logo-wrapper {
+  display: inline-block;
+
+  padding: 12px;
+
+  background: rgba(139, 92, 246, 0.1);
+
+  border-radius: 18px;
+
+  margin-bottom: 18px;
+
+  border:
+    1px solid
+    rgba(139, 92, 246, 0.3);
+
+  box-shadow:
+    0 0 15px
+    rgba(139, 92, 246, 0.1);
+}
+
+
+.logo {
+  width: 44px;
+  height: 44px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+.login-header h2 {
+  color: #f3f4f6;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+
+  margin-bottom: 8px;
+}
+
+
+.subtitle {
+  color: #9ca3af;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* ==================================================
+   GOOGLE BUTTON
+================================================== */
+
+.google-login-section {
+  margin-top: 10px;
+}
+
+
+.cyber-google-btn {
+  width: 100%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1f2937 0%,
+      #111827 100%
+    );
+
+  color: #f9fafb;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.1);
+
+  border-radius: 14px;
+
+  padding: 14px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  box-shadow:
+    0 4px 20px
+    rgba(0, 0, 0, 0.4);
+
+  transition:
+    all 0.3s ease;
+}
+
+
+.cyber-google-btn:hover {
+  background:
+    linear-gradient(
+      135deg,
+      #374151 100%,
+      #1f2937 0%
+    );
+
+  border-color:
+    rgba(139, 92, 246, 0.5);
+
+  box-shadow:
+    0 0 20px
+    rgba(139, 92, 246, 0.3);
+
+  transform:
+    translateY(-2px);
+}
+
+
+.cyber-google-btn:active {
+  transform: translateY(0);
+}
+
+
+.cyber-google-btn:disabled {
+  cursor: not-allowed;
+}
+
+
+.google-icon {
+  flex-shrink: 0;
+}
+
+
+/* ==================================================
+   FEEDBACK
+================================================== */
+
+.feedback-message {
+  margin-top: 20px;
+
+  font-size: 13px;
+
+  text-align: center;
+
+  min-height: 20px;
+
+  transition:
+    all 0.3s ease;
+}
+
+
+.feedback-message.error {
+  color: #fca5a5;
+
+  background:
+    rgba(239, 68, 68, 0.15);
+
+  border:
+    1px solid
+    rgba(239, 68, 68, 0.3);
+
+  padding: 10px 14px;
+
+  border-radius: 10px;
+}
+
+
+.feedback-message.success {
+  color: #86efac;
+
+  background:
+    rgba(34, 197, 94, 0.15);
+
+  border:
+    1px solid
+    rgba(34, 197, 94, 0.3);
+
+  padding: 10px 14px;
+
+  border-radius: 10px;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+  .cyber-panel {
+    padding: 32px 20px;
+
+    border: none;
+
+    background:
+      rgba(13, 17, 23, 0.9);
+  }
+
+}

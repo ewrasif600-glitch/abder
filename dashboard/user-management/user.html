@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="user-management.css">
+</head>
+<body>
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="../logo.png" alt="Logo">
+      <h2>ASF</h2>
+    </div>
+    <nav>
+      <ul>
+    <script type="module">
+  import { logout } from "../firebase/auth.js";
+  window.logout = logout;
+</script>
+
+<li><a href="../index.html">Dashboard</a></li>
+          <li><a href="..//collection/index.html">Collection</a></li>
+          <li><a href="../link/index.html">Link</a></li>
+         <li><a href="index.html" class="active">User Management</a></li>
+          <li><a href="#" onclick="logout()">Logout</a></li>
+        
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <h1>User Management</h1>
+    <div id="notifications"></div>
+
+    <div class="add-user-form">
+      <input type="email" id="newUserEmail" placeholder="Email">
+      <input type="password" id="newUserPass" placeholder="Password">
+      <button id="addUserBtn">Add User</button>
+    </div>
+
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+</div>
+
+<script type="module" src="user-management.js"></script>
+</body>
+</html>
