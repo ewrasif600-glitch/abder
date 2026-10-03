@@ -1,0 +1,120 @@
+[debug] [2025-10-24T18:12:18.274Z] ----------------------------------------------------------------------
+[debug] [2025-10-24T18:12:18.277Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-10-24T18:12:18.277Z] CLI Version:   14.22.0
+[debug] [2025-10-24T18:12:18.277Z] Platform:      win32
+[debug] [2025-10-24T18:12:18.277Z] Node Version:  v22.21.0
+[debug] [2025-10-24T18:12:18.277Z] Time:          Sat Oct 25 2025 00:12:18 GMT+0600 (Bangladesh Standard Time)
+[debug] [2025-10-24T18:12:18.277Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hridoy\Desktop\admin panel\Asf-Panel-Na-main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-10-24T18:12:46.524Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-24T18:12:46.524Z] > authorizing via signed-in user (ewrasif600@gmail.com)
+[debug] [2025-10-24T18:12:57.368Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:519:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1134:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:271:20)
+    at ReadStream.emit (node:events:531:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-10-24T18:14:40.957Z] ----------------------------------------------------------------------
+[debug] [2025-10-24T18:14:40.961Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-10-24T18:14:40.961Z] CLI Version:   14.22.0
+[debug] [2025-10-24T18:14:40.961Z] Platform:      win32
+[debug] [2025-10-24T18:14:40.961Z] Node Version:  v22.21.0
+[debug] [2025-10-24T18:14:40.962Z] Time:          Sat Oct 25 2025 00:14:40 GMT+0600 (Bangladesh Standard Time)
+[debug] [2025-10-24T18:14:40.962Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Hridoy\Desktop\admin panel\Asf-Panel-Na-main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-10-24T18:14:54.019Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-24T18:14:54.019Z] > authorizing via signed-in user (ewrasif600@gmail.com)
+[debug] [2025-10-24T18:15:13.130Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:13.130Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:13.132Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-24T18:15:13.133Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"asf-panel-Azizul"}
+[debug] [2025-10-24T18:15:14.047Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-24T18:15:14.047Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"asf-panel-azizul-9a7e2"}
+[debug] [2025-10-24T18:15:37.209Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:37.209Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:37.209Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-24T18:15:37.210Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"asf-panel-Azizul16"}
+[debug] [2025-10-24T18:15:37.842Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-24T18:15:37.842Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"asf-panel-azizul16"}
+[debug] [2025-10-24T18:15:42.576Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:42.576Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:42.577Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-24T18:15:42.577Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"asf-panel-Azizul16"}
+[debug] [2025-10-24T18:15:42.944Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-24T18:15:42.944Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"asf-panel-azizul16"}
+[debug] [2025-10-24T18:15:44.608Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:44.608Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:44.609Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-24T18:15:44.609Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"asf-panel-Azizul16"}
+[debug] [2025-10-24T18:15:45.040Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-24T18:15:45.040Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_NOT_VALID","suggestedProjectId":"asf-panel-azizul16"}
+[debug] [2025-10-24T18:15:50.984Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:50.984Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:15:50.985Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-10-24T18:15:50.985Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"asf-panel-azizull"}
+[debug] [2025-10-24T18:15:51.445Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-10-24T18:15:51.445Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"asf-panel-azizull"}
+[debug] [2025-10-24T18:16:10.917Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:16:10.918Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:16:10.918Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-10-24T18:16:10.918Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"asf-panel-azizull","name":"asf-panel-azizull"}
+[debug] [2025-10-24T18:16:12.496Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-10-24T18:16:12.496Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.6097786821209070959"}
+[debug] [2025-10-24T18:16:12.499Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:16:12.499Z] Checked if tokens are valid: true, expires at: 1761333108812
+[debug] [2025-10-24T18:16:12.499Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6097786821209070959 [none]
+[debug] [2025-10-24T18:16:13.860Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6097786821209070959 200
+[debug] [2025-10-24T18:16:13.860Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.6097786821209070959 {"name":"operations/create_project.global.6097786821209070959","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2025-10-24T18:16:14.059Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCloudProject (C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:227:29)
+    at async createFirebaseProjectAndLog (C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:87:9)
+    at async Object.doSetup (C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:65:24)
+    at async init (C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:77:13)
+    at async Command.initAction [as actionFn] (C:\Users\Hridoy\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\init.js:219:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

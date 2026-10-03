@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>ASF | Dashboard</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
+  <!-- Dashboard CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- ==========================================
+         SIDEBAR
+    =========================================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+      <!-- Logo -->
+      <div class="sidebar-logo">
+
+        <div class="logo-box">
+          <img
+            src="logo.png"
+            alt="ASF Logo"
+            onerror="this.style.display='none'"
+          >
+        </div>
+
+        <div class="logo-text">
+          <h2>ASF</h2>
+          <span>ADMIN PANEL</span>
+        </div>
+
+      </div>
+
+
+      <!-- Navigation -->
+      <nav class="sidebar-nav">
+
+        <div class="nav-title">
+          MAIN MENU
+        </div>
+
+        <a
+          href="index.html"
+          class="nav-item active"
+        >
+          <i class="fa-solid fa-house"></i>
+          <span>Dashboard</span>
+        </a>
+
+        <a
+          href="collection/"
+          class="nav-item"
+        >
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Collection</span>
+        </a>
+
+        <a
+          href="link/"
+          class="nav-item"
+        >
+          <i class="fa-solid fa-link"></i>
+          <span>Link</span>
+        </a>
+
+        <a
+          href="user-management/"
+          class="nav-item"
+        >
+          <i class="fa-solid fa-users"></i>
+          <span>User Management</span>
+        </a>
+
+      </nav>
+
+
+      <!-- Sidebar Bottom -->
+      <div class="sidebar-bottom">
+
+        <div class="system-status">
+          <span class="status-dot"></span>
+          <span>System Online</span>
+        </div>
+
+        <button
+          type="button"
+          class="logout-btn"
+          id="logoutBtn"
+        >
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span>Logout</span>
+        </button>
+
+      </div>
+
+    </aside>
+
+
+    <!-- ==========================================
+         MOBILE OVERLAY
+    =========================================== -->
+
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+    ></div>
+
+
+    <!-- ==========================================
+         MAIN CONTENT
+    =========================================== -->
+
+    <main class="main-content">
+
+      <!-- Top Header -->
+      <header class="topbar">
+
+        <div class="topbar-left">
+
+          <button
+            type="button"
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div>
+
+            <div class="breadcrumb">
+              ADMIN PANEL
+              <span>/</span>
+              DASHBOARD
+            </div>
+
+            <h1>Dashboard</h1>
+
+          </div>
+
+        </div>
+
+
+        <!-- Profile -->
+        <div class="profile">
+
+          <div class="profile-avatar">
+            A
+          </div>
+
+          <div class="profile-info">
+
+            <strong>Admin</strong>
+
+            <span>Administrator</span>
+
+          </div>
+
+        </div>
+
+      </header>
+
+
+      <!-- ========================================
+           CONTENT
+      ========================================= -->
+
+      <section class="content">
+
+
+        <!-- Welcome Banner -->
+        <div class="welcome-banner">
+
+          <div class="welcome-content">
+
+            <div class="welcome-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              ADMIN ACCESS
+            </div>
+
+            <h2>
+              Welcome back, Admin
+            </h2>
+
+            <p>
+              Manage your website, collections,
+              links and users from one place.
+            </p>
+
+          </div>
+
+
+          <div class="welcome-icon">
+
+            <i class="fa-solid fa-user-shield"></i>
+
+          </div>
+
+        </div>
+
+
+        <!-- Section Header -->
+        <div class="section-header">
+
+          <div>
+
+            <h2>
+              Overview
+            </h2>
+
+            <p>
+              Quick overview of your admin panel
+            </p>
+
+          </div>
+
+          <div class="online-badge">
+
+            <span class="status-dot"></span>
+
+            ONLINE
+
+          </div>
+
+        </div>
+
+
+        <!-- ========================================
+             STAT CARDS
+        ========================================= -->
+
+        <div class="stats-grid">
+
+
+          <!-- Collection -->
+          <div class="stat-card">
+
+            <div class="stat-card-top">
+
+              <div class="stat-icon purple">
+                <i class="fa-solid fa-layer-group"></i>
+              </div>
+
+              <span>
+                COLLECTION
+              </span>
+
+            </div>
+
+            <h3>
+              Collections
+            </h3>
+
+            <strong>
+              0
+            </strong>
+
+            <p>
+              Total collections
+            </p>
+
+          </div>
+
+
+          <!-- Links -->
+          <div class="stat-card">
+
+            <div class="stat-card-top">
+
+              <div class="stat-icon blue">
+                <i class="fa-solid fa-link"></i>
+              </div>
+
+              <span>
+                LINKS
+              </span>
+
+            </div>
+
+            <h3>
+              Total Links
+            </h3>
+
+            <strong>
+              0
+            </strong>
+
+            <p>
+              Active links
+            </p>
+
+          </div>
+
+
+          <!-- Users -->
+          <div class="stat-card">
+
+            <div class="stat-card-top">
+
+              <div class="stat-icon green">
+                <i class="fa-solid fa-users"></i>
+              </div>
+
+              <span>
+                USERS
+              </span>
+
+            </div>
+
+            <h3>
+              Users
+            </h3>
+
+            <strong>
+              0
+            </strong>
+
+            <p>
+              Registered users
+            </p>
+
+          </div>
+
+
+        </div>
+
+
+        <!-- ========================================
+             QUICK ACCESS
+        ========================================= -->
+
+        <div class="section-header quick-section">
+
+          <div>
+
+            <h2>
+              Quick Access
+            </h2>
+
+            <p>
+              Open your management sections
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="quick-grid">
+
+
+          <!-- Collection -->
+          <a
+            href="collection/"
+            class="quick-card"
+          >
+
+            <div class="quick-icon purple">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div class="quick-content">
+
+              <h3>
+                Collection
+              </h3>
+
+              <p>
+                Manage your collections
+              </p>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right quick-arrow"></i>
+
+          </a>
+
+
+          <!-- Link -->
+          <a
+            href="link/"
+            class="quick-card"
+          >
+
+            <div class="quick-icon blue">
+              <i class="fa-solid fa-link"></i>
+            </div>
+
+            <div class="quick-content">
+
+              <h3>
+                Link
+              </h3>
+
+              <p>
+                Manage your links
+              </p>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right quick-arrow"></i>
+
+          </a>
+
+
+          <!-- User Management -->
+          <a
+            href="user-management/"
+            class="quick-card"
+          >
+
+            <div class="quick-icon green">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div class="quick-content">
+
+              <h3>
+                User Management
+              </h3>
+
+              <p>
+                Manage registered users
+              </p>
+
+            </div>
+
+            <i class="fa-solid fa-arrow-right quick-arrow"></i>
+
+          </a>
+
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+          <span>
+            © <span id="year"></span> ASF
+          </span>
+
+          <span>
+            <i class="fa-solid fa-shield-halved"></i>
+            Admin Dashboard
+          </span>
+
+        </footer>
+
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ==========================================
+       MOBILE MENU SCRIPT
+  =========================================== -->
+
+  <script>
+
+    const menuBtn =
+      document.getElementById("menuBtn");
+
+    const sidebar =
+      document.getElementById("sidebar");
+
+    const sidebarOverlay =
+      document.getElementById("sidebarOverlay");
+
+    const logoutBtn =
+      document.getElementById("logoutBtn");
+
+
+    // Open sidebar
+    menuBtn.addEventListener("click", () => {
+
+      sidebar.classList.add("show");
+
+      sidebarOverlay.classList.add("show");
+
+    });
+
+
+    // Close sidebar
+    sidebarOverlay.addEventListener("click", () => {
+
+      sidebar.classList.remove("show");
+
+      sidebarOverlay.classList.remove("show");
+
+    });
+
+
+    // Close sidebar after navigation
+    document
+      .querySelectorAll(".nav-item")
+      .forEach(item => {
+
+        item.addEventListener("click", () => {
+
+          sidebar.classList.remove("show");
+
+          sidebarOverlay.classList.remove("show");
+
+        });
+
+      });
+
+
+    // Temporary logout
+    logoutBtn.addEventListener("click", () => {
+
+      alert("Login system will be connected here later.");
+
+    });
+
+
+    // Current year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
