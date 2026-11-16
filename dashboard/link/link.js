@@ -56,7 +56,7 @@ const auth = getAuth(app);
 
 const ALLOWED_ADMIN_EMAILS = [
   "asifsheikh60000@gmail.com",
-   "kcarpenter8383@gmail.com",
+   "sarkarabdullah191@gmail.com",
   "ewrasif600@gmail.com"
 ];
 
