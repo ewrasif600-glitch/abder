@@ -259,7 +259,7 @@ async function logoutAdmin() {
 
     await signOut(auth);
 
-    window.location.replace("../login/");
+    window.location.replace("./login/");
 
   } catch (error) {
 
