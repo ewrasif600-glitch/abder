@@ -107,7 +107,7 @@ function showLoginPage() {
   // Actual login page:
   // /login/index.html
 
-  window.location.replace("../login/");
+  window.location.replace("./login/");
 }
 
 /*
